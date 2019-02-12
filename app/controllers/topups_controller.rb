@@ -7,6 +7,10 @@ class TopupsController < ApplicationController
     @topups = Topup.all
   end
 
+  def dashboard
+    
+  end
+
   # GET /topups/1
   # GET /topups/1.json
   def show
