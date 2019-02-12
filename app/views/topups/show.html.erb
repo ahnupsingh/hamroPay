@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mobile number:</strong>
+  <%= @topup.mobile_number %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @topup.amount %>
+</p>
+
+<%= link_to 'Edit', edit_topup_path(@topup) %> |
+<%= link_to 'Back', topups_path %>
