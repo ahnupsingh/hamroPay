@@ -5,15 +5,25 @@
 
 <div class="topup">
   <div class="row">
-    <div class="card col s12 m4">
-      <div class="form-inputs row">
-        <%= f.input :mobile_number, wrapper_html: { class: '' } %>
-        <%= f.input :amount, wrapper_html: { class: '' } %>
-      </div>
-      <div class="create_topup_btn form-actions right">
-        <%= f.button :submit %>
-      </div>
+    <div class="col s12 m4">
+
     </div>
+
+      <div class="new_topup_form card col s12 m4">
+        <div class="form-inputs row">
+          <%= f.input :mobile_number, wrapper_html: { class: '' } %>
+          <%= f.input :amount, wrapper_html: { class: '' } %>
+        </div>
+        <div class="card-action ">
+          <%= f.button :submit, :class =>'create_topup_btn right bg_white_text_white' %>
+        </div>
+      </div>
+
+
+    <div class="col s12 m4">
+
+    </div>
+
   </div>
 
 </div>
