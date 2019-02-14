@@ -8,7 +8,7 @@ class TopupsController < ApplicationController
   end
 
   def dashboard
-    
+
   end
 
   # GET /topups/1
@@ -32,8 +32,8 @@ class TopupsController < ApplicationController
 
     respond_to do |format|
       if @topup.save
-        format.html { redirect_to @topup, notice: 'Topup was successfully created.' }
-        format.json { render :show, status: :created, location: @topup }
+        format.html { redirect_to topups_path, notice: 'Topup was successfully created.' }
+        format.json { render :index, status: :created, location: @topup }
       else
         format.html { render :new }
         format.json { render json: @topup.errors, status: :unprocessable_entity }
@@ -46,8 +46,8 @@ class TopupsController < ApplicationController
   def update
     respond_to do |format|
       if @topup.update(topup_params)
-        format.html { redirect_to @topup, notice: 'Topup was successfully updated.' }
-        format.json { render :show, status: :ok, location: @topup }
+        format.html { redirect_to topups_path, notice: 'Topup was successfully updated.' }
+        format.json { render :index, status: :ok, location: @topup }
       else
         format.html { render :edit }
         format.json { render json: @topup.errors, status: :unprocessable_entity }
