@@ -3,12 +3,18 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-inputs row">
-    <%= f.input :mobile_number, wrapper_html: { class: 'm6 s12' } %>
-    <%= f.input :amount, wrapper_html: { class: 'm6 s12' } %>
+<div class="topup">
+  <div class="row">
+    <div class="card col s12 m4">
+      <div class="form-inputs row">
+        <%= f.input :mobile_number, wrapper_html: { class: '' } %>
+        <%= f.input :amount, wrapper_html: { class: '' } %>
+      </div>
+      <div class="create_topup_btn form-actions right">
+        <%= f.button :submit %>
+      </div>
+    </div>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+</div>
+  <% end %>
