@@ -1,7 +1,7 @@
 // Place all the styles related to the Topups controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.create_topup_btn{
+.topup_btn{
 margin-bottom: 5px !important;
 }
 
@@ -12,8 +12,4 @@ margin-bottom: 5px !important;
 .new_topup_info{
   margin-left: 10px !important;
   background-color: blue !important;
-}
-
-.new_topup_form{
-  background-color: #fff4f4 !important;
 }

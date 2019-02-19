@@ -26,8 +26,27 @@
   margin: 0px,0px,0px,0px !important;
 }
 
+main {
+  background-color: #F3F2F4;
+  flex: 1 0 auto;
+}
+
+.card-content{
+  width: 50%;
+
+}
 .ntc_logo{
   width: 100%;
+}
+
+.card-description{
+  width: 100%;
+  align-items: center;
+  text-align:center;
+}
+
+.header {
+  color: #6F008C;
 }
 
 .btn{
@@ -38,6 +57,9 @@ h1{
   color: #540002;
 }
 
+.footer{
+  background-color: #2b2f38;
+}
 
 #notice{
 
